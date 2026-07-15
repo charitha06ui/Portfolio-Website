@@ -499,7 +499,7 @@ section{
 
 /*==============================
       CERTIFICATES SECTION
-===============================*/
+==============================*/
 
 .certificates{
     background:#111c34;
@@ -507,50 +507,63 @@ section{
 
 .certificate-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
 }
 
 .certificate-card{
     background:#1e293b;
-    padding:35px;
-    border-radius:18px;
+    border-radius:15px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
     text-align:center;
-    transition:.4s;
-    border:1px solid rgba(255,255,255,.08);
+    min-height:520px;
+    transition:.3s;
 }
 
 .certificate-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 35px rgba(56,189,248,.25);
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(56,189,248,.2);
 }
 
-.certificate-card i{
+.certificate-card>i{
     font-size:55px;
     color:#38bdf8;
     margin-bottom:20px;
 }
 
 .certificate-card h3{
-    font-size:22px;
-    margin-bottom:15px;
+    font-size:28px;
+    margin-bottom:18px;
+    min-height:70px;
 }
 
 .certificate-card p{
     color:#cbd5e1;
     line-height:1.8;
-    margin-bottom:25px;
+    flex:1;
 }
 
+/* Button */
+
 .certificate-card a{
-    text-decoration:none;
-    display:inline-flex;
+    width:220px;
+    height:55px;
+    margin:25px auto 0;
+
+    display:flex;
+    justify-content:center;
     align-items:center;
-    gap:8px;
-    padding:12px 20px;
+    gap:10px;
+
     background:#38bdf8;
-    color:white;
+    color:#fff;
+    text-decoration:none;
     border-radius:8px;
+    font-size:17px;
+    font-weight:600;
+
     transition:.3s;
 }
 
@@ -558,6 +571,11 @@ section{
     background:#0ea5e9;
 }
 
+.certificate-card a i{
+    font-size:16px;
+    color:#fff;
+    margin:0;
+}
 /*==============================
         CONTACT SECTION
 ===============================*/
